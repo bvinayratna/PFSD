@@ -1,0 +1,37 @@
+basic keywords in flask web application
+
+Flask - is a class which is used to create an instance of an web application
+app - is a object which is used to refer our web application
+**route - is a url or address or navigation for a specific page 
+render_template() - method to return an html page
+directories - 
+    templates is a directory which hold only html codes
+    static is a dir which contains all css, js, images, etc,.
+    debug is a property is a property to trace our website or any errors or status
+NOTE: the efault port number for flask application is 5000
+
+the most important stpes to create flask web application
+
+create virtual environment or use virtual environment
+install flask package or module
+create an app script
+create routers as functions
+run the script using python <script name>
+the lefault location is localhost:/5000
+
+to see how many packages installed in the drive - pip list
+
+creating virtual environment
+
+pip install pipenv
+pipenv shell
+exit()
+
+create erp with following six routers
+home - images of kl cse logos
+login - with email and password and captcha
+register 
+logout
+profile
+view attendance ---view marks
+contact page -displays the developer page
