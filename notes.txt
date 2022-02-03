@@ -1,0 +1,44 @@
+'''
+file types:
+character data
+multimedia
+
+modes of files (5types):
+read, write, append, readbytes(rb), writebytes(wb), 
+to-skip headers from processing we use next(data)
+json is a builtin module
+some of the methods to be worked
+load() - read of json in form of dict
+dump() - write of json in form of dict
+loads() - read of json in form of string
+dumps() - write of json in form of string
+
+**context manager
+in python "with" is a keyword to create context manager to work with:
+files
+database
+networks, etc,.
+
+where the connections can be automatically closed
+
+note:
+with is a context manager mostly used in database connections
+
+template.inheritance:
+
+using flask we can create reusable html codes
+example: in every web application soe of the sections like headers, footers,nav bars, images, styles are commom
+by using template inheritance we create a basic layout as html and we can inherit to the remain other html pages
+
+render_template() - is a function to return html pages, data to be rendered inside a html page
+** url_for - to navigate of locate a resourse (like files, images, css, etc,.)
+
+jinja2expressions
+{{ variable }}
+  it is used to access the value from the route
+
+{% controlstatements %}
+   like if, else, for can be written inside html pages
+NOTE: python code can be written within HTML pages
+
+'''
