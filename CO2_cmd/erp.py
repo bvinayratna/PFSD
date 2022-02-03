@@ -1,15 +1,26 @@
+#to run this first run 'pipenv shell'
+from turtle import title
+from flask import render_template
 from distutils.log import debug
 from flask import Flask
 
 app = Flask(__name__)
 
+students = [{"regdno": 2000031242, "name": "Vinay", "course": "PFSD"},
+{"regdno": 2000030558, "name": "Sai", "course": "OSD"},
+{"regdno": 2000031251, "name": "Hecker Harsha Sins", "course": "AIDS"}]
+
+@app.route("/")
+def home():
+    return render_template("home.html", students = students)
+
 @app.route("/login")
 def login():
-    return "<p>login to kl erp</p>"
+    return render_template("login.html", title="Login")
 
 @app.route("/register")
 def register():
-    return "<p>register to kl erp</p>"
+    return render_template("register.html",title="Register")
 
 @app.route("/logout")
 def logout():
@@ -18,10 +29,6 @@ def logout():
 @app.route("/attendance")
 def attendance():
     return "<p>view attendance or marks</p>"
-
-@app.route("/")
-def home():
-    return "<p>welcome to kl erp</p>"
 
 @app.route("/profile")
 def profile():

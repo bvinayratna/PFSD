@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h5>Features of ERP</h5>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Registered No</th>
+        <th>Course</th>
+    </tr>
+    {% for s in students%}
+
+
+    <tr>
+        <td>{{s.name}}</td>
+        <td>{{s.regdno}}</td>
+        <td>{{s.course}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+{% endblock %}
