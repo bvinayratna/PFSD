@@ -1,4 +1,3 @@
-#to run this first run 'pipenv shell'
 from turtle import title
 from flask import render_template
 from distutils.log import debug
