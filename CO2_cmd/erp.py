@@ -23,7 +23,7 @@ def register():
 
 @app.route("/logout")
 def logout():
-    return "<p>logout page</p>"
+    return "<h1>Your are logged out</h1>"
 
 @app.route("/attendance")
 def attendance():
