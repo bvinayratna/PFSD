@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+.header{
+    padding: 15px;
+    background-color: brown;
+    color: white;
+}
+.footer{
+    background-color: lightgray;
+    padding: 15px;
+
+}
+.navbar{
+    padding: 10px;
+    background-color: lightgray;
+}
+.navbar > a{
+    text-decoration: none;
+}
