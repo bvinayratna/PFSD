@@ -1,7 +1,0 @@
-f1 = open("today.jpg", "rb" )
-data = f1.read()
-f2 = open("S45.jpg", "wb")
-f2.write(data)
-f1.close()
-f2.close()
-print("file copying done")

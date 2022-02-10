@@ -1,6 +1,38 @@
 {% extends 'layout.html'%}
+{% block title%}
+{{title}}
+{% endblock%}
 {% block content %}
+<div>
+<center>
+    <div class="login_body">
+        <div class="login_otbx">
+            <img class="kl_circle" src="static/kl_circle.png">
+        </div>
 
-    <h5>login</h5>
+            <div class="login_inbx">
+                <label class="labels">Username</label><br>
+                <input class="inputs" type="text" placeholder="Enter username">
+                <br><br>
+                <label class="labels">
+                    Password
+                </label>
+                <input class="inputs" type="password" placeholder="Enter password">
+                <br><br>
+                <label><input type="checkbox">  Remember me</label><br><br>
+                <p>CAPTCHA</p>
+                <input class="cptch_input" type="text" placeholder="Enter Verification Code"><br><br>
+                <a href="#">Forgot your password?</a><br><br>
+                <a href="#">Parent Registration?</a><br>
+                <button id="login_button">Login</button>
+            </div>
+            <div class="login_otbx">
+                &copy; Copyright 2022 by K L Deemed to be University.
+            </div>
+
+    </div>
+</center>
+</div>
+
 
 {% endblock %}

@@ -5,20 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KL - {% block title %}{{title}}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles.css')}}">
 </head>
 
 <body>
-    <center>
-        <h1 class="header">Welcome to KL ERP</h1>
-        <div class="navbar">
-            <a href="/register">Register</a>&ensp;
-        <a href="/login">Login</a>
+    
+
+    <div class="header">
+        <div class="first">
+            <img class="kl_logo" src="static/KL_University_Logo.png">
         </div>
-        
+
+        <div class="second">
+            <h1>Welcome to KL ERP</h1>
+        </div>
+
+    </div>
+
+    <center>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <a href="/attendance">Attendance</a>
+            <div class="dropdown">
+                <a class="dropdown-button" href="/courses">Courses ▼</a>
+                <div class="dropdown-content">
+                    <a href="/handouts">Handouts</a>
+                    <a href="/materials">Materials</a>
+                    <a href="/assignments">Assignments</a>
+                    <a href="/internals">Internals</a>
+                  </div>
+            </div>          
+            <a href="/profile">Profile</a>
+            <a href="/contactus">Contact-us</a>
+            <a href="/logout">Logout</a>
+        </div>
+
     </center>
-    <div style="padding: 10px;">
+    <div  class="tot_body" style="padding: 10px;">
         {% block content %}{% endblock %}
     </div>
     <center>
