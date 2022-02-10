@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block title %}
+{{title}}
+{% endblock %}
+{% block content %}
+
+<div class="course_body">
+<div class="course_box">
+    <h4 style="text-align: center;background-color: brown;padding: 5px;color: white;">{% block content1 %} {{title}} {% endblock %} </h4>
+    <br>
+    <label class="labels" for="year">Academic year</label><br>
+    <select name="year" id="years">
+        {% for y in years %}
+        <option value="year">{{y.year}}</option>
+        {% endfor %}
+    </select>
+      <br><br>
+      <label class="labels" for="sem">Semester</label><br>
+    <select  name="sem" id="sems">
+        {% for s in semesters %}
+        <option value="sem">{{s}}</option>
+        {% endfor %}
+    </select>
+      <br><br>
+      <button id="crs_search" type="submit">Search</button>
+      <button id="crs_reset" type="reset">Reset</button>
+
+
+
+</div>
+</div>
+
+{% endblock %}

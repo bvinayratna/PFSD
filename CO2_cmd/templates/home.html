@@ -1,13 +1,16 @@
 {% extends 'layout.html' %}
+{% block title %}
+{{title}}
+{% endblock %}
 {% block content %}
-<h5>Features of ERP</h5>
-<table>
+    <p>Welcome to home page</p>
+<!--<table>
     <tr>
         <th>Name</th>
         <th>Registered No</th>
         <th>Course</th>
     </tr>
-    {% for s in students%}
+    {% for s in students %}
 
 
     <tr>
@@ -17,5 +20,6 @@
     </tr>
 
     {% endfor %}
-</table>
+</table>-->
+
 {% endblock %}

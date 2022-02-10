@@ -4,19 +4,155 @@
 }
 
 .header{
-    padding: 15px;
+    padding: 4px;
     background-color: brown;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
+
 .footer{
     background-color: lightgray;
     padding: 15px;
-
+    bottom: 0;
+    position: absolute;
+    width: 98vw;
 }
 .navbar{
-    padding: 10px;
+    padding: 5px;
     background-color: lightgray;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
 }
-.navbar > a{
+.navbar > a, div a{
     text-decoration: none;
+    padding: 7px 25px;
+}
+.navbar > a:hover, div a:hover{
+    background-color: white;
+    padding:7px 25px;
+    transition: 0.25s;
+    border-radius: 5px;
+}
+.kl_logo{
+    height: 30px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+.second{
+    flex: 50%;
+}
+.first{
+    flex: 30%;
+}
+.courses{
+    background-color: transparent;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    margin-top: 6px;
+    display: none;
+    position: absolute;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.course_box{
+    background-color: white;
+    width: 30vw;
+    padding: 5px;
+    box-shadow: 1px 3px 10px lightgray;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#sems, #years{
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#crs_search, #crs_reset, #login_button{
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(103, 103, 251);
+    color: white;
+}
+.labels{
+    padding: 5px;
+}
+.login_body{
+    width: 24rem;
+    box-shadow: 1px 3px 10px lightgray;
+    margin-top: 15px;
+}
+.login_otbx{
+    background-color: brown;
+    padding: 13px;
+    max-height: 20px;
+    color: white;
+}
+.login_inbx{
+    box-shadow: 1px 3px 10px lightgray;
+    max-width: 20rem;
+    height: 24rem;
+    margin-top: 5px;
+    padding: 15px;
+    text-align: left;
+
+}
+.kl_circle{
+    border-radius: 50%;
+    height: 40px;
+    background-color: brown;    
+    padding: 5px;
+    position: relative;
+}
+.inputs, .cptch_input{
+    border: 1px solid black;
+    padding: 5px;
+    width: 95%;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.cptch_input{
+    width: 50%;
+    margin-top: 10px;
+}
+#login_button{
+    margin-top: 10px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 13px;
 }
