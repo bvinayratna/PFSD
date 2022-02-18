@@ -17,13 +17,15 @@ students = [{"regdno": 2000031242, "name": "Vinay", "course": "PFSD"},
 {"regdno": 2000030558, "name": "Sai", "course": "OSD"},
 {"regdno": 2000031251, "name": "Hecker", "course": "Hacking"}]
 
+flag=1
+
 @app.route("/")
 def home():
     return render_template("home.html", students = students,title="Home")
 
 @app.route("/courses")
 def courses():
-    return render_template("course_pages/courses.html",title="Courses", years=years,semesters=semesters, title2="materials", title3="assignments", title4="internals")
+    return render_template("course_pages/courses.html",title="Courses", years=years,semesters=semesters, flag=flag)
 
 @app.route("/login")
 def login():
@@ -31,7 +33,7 @@ def login():
 
 @app.route("/handouts")
 def handouts():
-    return render_template("course_pages/handouts.html", years=years,semesters=semesters,title="Handouts",)
+    return render_template("course_pages/handouts.html", years=years,semesters=semesters,title="Handouts",flag=flag)
 
 @app.route("/materials")
 def materials():

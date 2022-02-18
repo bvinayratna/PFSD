@@ -2,8 +2,9 @@
 {% block title %}
 {{title}}
 {% endblock %}
-{% block content %}
 
+{% block content %}
+flag={{flag}}
 <div class="course_body">
 <div class="course_box">
     <h4 style="text-align: center;background-color: brown;padding: 5px;color: white;">{% block content1 %} {{title}} {% endblock %} </h4>
@@ -22,12 +23,11 @@
         {% endfor %}
     </select>
       <br><br>
-      <button id="crs_search" type="submit">Search</button>
+      <button id="crs_search" type="submit" onclick="">Search</button>
       <button id="crs_reset" type="reset">Reset</button>
 
 
 
 </div>
 </div>
-
 {% endblock %}

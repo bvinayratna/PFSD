@@ -2,6 +2,13 @@
 {% block title %}
 {{title}}
 {% endblock %}
+{% if flag==1 %}
 {% block content1 %}
 <p>Course {{title}}</p>
 {% endblock %}
+{% endif %}
+{% if flag==2 %} 
+{% block content2 %} 
+{% endblock %} 
+{% endif %}
+
